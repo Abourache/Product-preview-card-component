@@ -2,29 +2,36 @@ body {
     background-color: rgb(243, 234, 227);
 }
 .content {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    width: 600px;
+    /*background-color: rgb(255, 255, 255);
+    */display: flex;
+    /*width: 600px;
     height: 450px;
-    margin: 170px auto 0px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    */justify-content: center;
+    margin: 160px auto 70px;
+
 }
-.content .img .image {
-    width: 300px;
-    border-radius: 7px 0 0 7px;
-    -webkit-border-radius: 7px 0 0 7px;
-    -moz-border-radius: 7px 0 0 7px;
-    -ms-border-radius: 7px 0 0 7px;
-    -o-border-radius: 7px 0 0 7px;
+.content .pik .des {
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+.content .pik .mob {
+    display: none;
 }
 .content .details {
+    background-color: rgb(255, 255, 255);
+    width: 245px;
+    height: 440px;
     padding-left: 25px;
     padding-top: 10px;
     padding-right: 30px;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
 }
 .content .details h2 {
     font-family: 'Fraunces', serif;
@@ -51,6 +58,7 @@ span {
 .btn {
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     background-color: hsl(158, 36%, 37%);
     width: 250px;
     height: 50px;
@@ -65,24 +73,29 @@ span {
 .btn:hover {
     background-color: hsl(158, 52%, 21%);
 }
+ 
 @media  (max-width: 375px) {
     .content {
-        display: inline-block;
-        width: 350px;
-        height: 710px;
+        display: flex;
+        flex-wrap: wrap;
     }
-    .content .img .image {
+    .content .pik .des {
+        display: none;
+    }
+    .content .pik .mob {
         display: block;
-        width: 350px;
-        height: 290px;
-        object-fit: cover;
-        border-radius: 7px 7px 0 0;
-        -webkit-border-radius: 7px 7px 0 0;
-        -moz-border-radius: 7px 7px 0 0;
-        -ms-border-radius: 7px 7px 0 0;
-        -o-border-radius: 7px 7px 0 0;
+        margin-bottom: 0;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
 }
+
+}
+/*     
+
 .btn {
     width:300px;
 }
-}
+} */ 
